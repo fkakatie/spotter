@@ -1,30 +1,33 @@
 <div class="griddy">
+
     <div class="workouts workouts-unqueued">
         <h2>List of Exercises</h2>
         <p class="big">Add any exercise below to your next workout routine.</p>
         <table class="wo-table">
             <tbody>
                 {{#each workouts}}
-                    {{#unless queued}}
-                        {{> workouts/workout queued=false}}
-                    {{/unless}}
+                {{#unless queued}}
+                {{> workouts/workout queued=false}}
+                {{/unless}}
                 {{/each}}
             </tbody>
         </table>
     </div>
+
     <div class="workouts workouts-queued">
         <h2>Your Next Workout</h2>
         <p class="big">Remove any exercise below from your next workout routine.</p>
         <table class="wo-table">
             <tbody>
                 {{#each workouts}}
-                    {{#if queued}}
-                        {{> workouts/workout queued=true}}
-                    {{/if}}
+                {{#if queued}}
+                {{> workouts/workout queued=true}}
+                {{/if}}
                 {{/each}}
             </tbody>
         </table>
     </div>
+
 
     <div class="workouts workouts-form">
         <h2>Add New Exercise</h2>
