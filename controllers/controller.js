@@ -25,7 +25,14 @@ router.put('/api/workouts/:id', function(req, res) {
             res.status(200).end();
         }
     })
-})
+});
+
+router.post('/api/workouts', function(req, res) {
+    var value = '"' + req.body.workout + '"';
+    spotter.insertOne(value, function(result) {
+        res.json({ id: result.insertId });
+    })
+});
 
 // export routes
 module.exports = router;
