@@ -196,7 +196,7 @@ BUTTONS
     color: #222;
     border: 1px solid #e6b800;    
     border-radius: 0.5em;
-    transition: all 100ms ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .btn:hover {
@@ -258,6 +258,11 @@ footer nav li {
 footer nav li a {
     color: #fc0;
     text-decoration: none;
+    transition: 500ms;
+}
+
+footer nav li a:hover {
+    filter: brightness(50%);
 }
 
 .social {
