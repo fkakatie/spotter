@@ -99,6 +99,14 @@ section h2 {
     color: #222;
 }
 
+.griddy .workouts-queued {
+    background: #ffe789;
+}
+
+.workouts-queued table tbody tr:nth-child(odd) {
+    background-color: #ffdf62;
+}
+
 .workouts table {
     width: 100%;
 }
@@ -109,7 +117,7 @@ section h2 {
     padding: 0.5em 1em;
 }
   
-.workouts table tbody tr:nth-child(odd) {
+.workouts-unqueued table tbody tr:nth-child(odd) {
     background-color: #ccc;
 }
 
@@ -127,10 +135,37 @@ FORM
 
 .workouts-form {
     grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 8px;
 }
 
-form input {
+.workouts-form h2 {
+    margin: 0;
+}
+
+.workouts-form form {
+    /* justify-self: center; */
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 8px;
+}
+
+.workouts-form form input {
     padding: 0.5em;
+    width: 100%;
+    border: none;
+}
+
+.workouts-form form input:focus {
+    outline: none;
+}
+
+.workouts-form form input:-webkit-autofill,
+.workouts-form form input:-webkit-autofill:hover, 
+.workouts-form form input:-webkit-autofill:focus, 
+.workouts-form form input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
 }
 
 /*
