@@ -11,12 +11,21 @@ var spotter = require('../models/spotter.js');
 router.get('/', function(req, res) {
     spotter.selectAll(function(data) {
         var hndbrsObj = { workouts: data };
-
-        console.log(hndbrsObj);
-
         res.render('index', hndbrsObj);
     })
 });
+
+router.put('/api/workouts/:id', function(req, res) {
+    var value = req.body.queued;
+    var id = req.params.id;
+    spotter.updateOne(value, id, function(result) {
+        if (result.changedRows == 0) {
+            return res.status(404).end();
+        } else {
+            res.status(200).end();
+        }
+    })
+})
 
 // export routes
 module.exports = router;

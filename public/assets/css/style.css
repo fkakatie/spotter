@@ -10,11 +10,27 @@ body {
     color: #fff;
 }
 
-a {
-    color: #fc0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-header, section, footer {
+p {
+    line-height: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.big {
+    font-size: 1.05em;
+    margin-bottom: 1em;
+}
+
+button, form, input {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header, footer {
     padding: 30px 15px;
 }
 
@@ -24,21 +40,143 @@ header, section, footer {
     margin: 0 auto;
 }
 
+::selection {
+    background: #fc0;
+    color: #222;
+}
+
 /*
 ==============================
 HEADER
 ==============================
 */
 
+header {
+    background: #181818;
+    color: #efefef;
+    margin-bottom: 15px;
+}
+
 header h1 {
-    font-family: 'Orbitron', sans-serif;
     font-size: 3em;
+}
+
+header h1 a {
+    color: #fc0;
+    text-decoration: none;
+}
+
+header .subtitle {
+    font-size: 1.15em;
+}
+
+header .subtitle span {
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-header h1 a {
-    text-decoration: none;
+/*
+==============================
+SECTION
+==============================
+*/
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.griddy {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.griddy .workouts {
+    padding: 30px 15px;
+    background: #efefef;
+    color: #222;
+}
+
+.workouts table {
+    width: 100%;
+}
+
+.workouts table td, th {
+    border: 0;
+    text-align: left;
+    padding: 0.5em 1em;
+}
+  
+.workouts table tbody tr:nth-child(odd) {
+    background-color: #ccc;
+}
+
+.workouts table tbody tr td {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+/*
+==============================
+FORM
+==============================
+*/
+
+.workouts-form {
+    grid-column: 1 / span 2;
+}
+
+form input {
+    padding: 0.5em;
+}
+
+/*
+==============================
+BUTTONS
+==============================
+*/
+
+.btn {
+    display: inline-block;
+    padding: 0.5em;
+    background: #fc0;
+    color: #222;
+    border: 1px solid #e6b800;    
+    border-radius: 0.5em;
+    transition: all 100ms ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 0.8em;
+    line-height: 0.8em;
+}
+
+.btn-collapsible {
+    max-width: 24px;   
+    white-space: nowrap;
+    justify-self: end;
+}
+
+.btn-collapsible span {
+    opacity: 0;
+    text-indent: -6px;
+}
+
+.btn-collapsible:hover {
+    max-width: initial;
+}
+
+.btn-collapsible:hover > span {
+    opacity: 1;
+    text-indent: 0px;
+    transition: all 500ms ease-in-out;
 }
 
 /*
@@ -67,6 +205,7 @@ footer nav li {
 }
 
 footer nav li a {
+    color: #fc0;
     text-decoration: none;
 }
 

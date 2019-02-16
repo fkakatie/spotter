@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Spotter</title>
+    <title>SPOTTER</title>
 
     {{!-- FONTS --}}
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
@@ -19,12 +19,15 @@
 
 <body>
 
-    <header class="container">
-        <h1><a href="/">Spotter</a></h1>
+    <header>
+        <div class="container">
+            <h1><a href="/">Spotter</a></h1>
+            <p class="subtitle">Build your next workout with <span class="logo">Spotter</span>. Choose from our list of exercises and even add your own!</p>
+        </div>
     </header>
 
     <section class="container">
-        {{body}}
+        {{{ body }}}
     </section>
 
     <footer class="container">
@@ -49,5 +52,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
 crossorigin="anonymous"></script>
+<script src="assets/js/script.js" type="text/javascript" ></script>
 
 </html>

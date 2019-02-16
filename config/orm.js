@@ -6,14 +6,10 @@ const orm = {
     // select all data from table
     selectAll: function(tableName, callback) {
         var qString = 'SELECT * FROM ' + tableName + ';';
-
         console.log('selectAll: ' + qString);
-
         connection.query(qString, function(err, result) {
-            
             if (err) throw err;
             callback(result);
-
         })
     },
     // insert new item to table
@@ -21,27 +17,23 @@ const orm = {
         var qString = 'INSERT INTO ' + tableName + 
             ' (' + column + ') ' + 
             'VALUES (' + value + ';';
-
         console.log('insertOne: ' + qString);
-
         connection.query(qString, function(err, result) {
-            
             if (err) throw err;
             callback(result);
-
         })
     },
     // update table item
-    updateOne: function(tableName, value, id, callback) {
+    updateOne: function(tableName, column, value, idColumn, id, callback) {
         var qString = 'UPDATE ' + tableName + 
-            ' SET ' + value +  
-            ' WHERE ' + id + ';';
-
+            ' SET ' + column + 
+            ' = ' + value +  
+            ' WHERE ' + idColumn +
+            ' = ' + id + ';';
+        console.log('updateOne: ' + qString);
         connection.query(qString, function(err, result) {
-            
             if (err) throw err;
             callback(result);
-
         })
     }
 }

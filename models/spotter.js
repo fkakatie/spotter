@@ -16,7 +16,7 @@ var spotter = {
     },
     // update workout by id
     updateOne: function(value, id, callback) {
-        orm.updateOne('workouts', value, id, function(res) {
+        orm.updateOne('workouts', 'queued', value, 'id', id, function(res) {
             callback(res);
         });
     }
