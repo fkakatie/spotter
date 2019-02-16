@@ -45,6 +45,19 @@ header, footer {
     color: #222;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #222; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #fc0; 
+    border-radius: 8px;
+}
+
 /*
 ==============================
 HEADER
@@ -138,6 +151,7 @@ FORM
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 8px;
+    align-items: center;
 }
 
 .workouts-form h2 {
@@ -145,15 +159,16 @@ FORM
 }
 
 .workouts-form form {
-    /* justify-self: center; */
     display: grid;
     grid-template-columns: 1fr auto;
     grid-gap: 8px;
+    align-items: center;
 }
 
 .workouts-form form input {
     padding: 0.5em;
     width: 100%;
+    font-size: 100%;
     border: none;
 }
 
@@ -186,6 +201,7 @@ BUTTONS
 
 .btn:hover {
     cursor: pointer;
+    filter: brightness(90%);
 }
 
 .btn-sm {
