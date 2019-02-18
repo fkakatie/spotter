@@ -1,0 +1,22 @@
+@media screen and (max-width: 360px) {
+
+    /*
+    ==============================
+    FOOTER
+    ==============================
+    */
+
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer nav ul {
+        padding: 0 8px;
+        justify-content: space-between;
+    }
+
+    footer nav li {
+        padding: 0;
+    }
+
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: 768px) {
+
+    /*
+    ==============================
+    FORM
+    ==============================
+    */
+
+    .workouts-form {
+        grid-template-columns: 1fr;
+    }
+
+}
