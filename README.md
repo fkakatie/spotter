@@ -4,7 +4,7 @@ Build your next workout with Spotter. Choose from our list of exercises and even
 
 ## What this project does ## 
 
-This project usess `MySQL`, `Node`, `Express`, `Handlebars`, and a homemade `ORM`. `Node` and `MySQL` is used to query and route data in the app. `Handlebars` is used to generate the HTML. The `ORM` is used to query and manipulate data from the database using in `JavaScript` rather than `SQL`.
+This project usess `MySQL`, `Node`, `Express`, `Handlebars`, and a homemade `ORM`. `Node` and `MySQL` is used to query and route data in the app. `Handlebars` is used to generate the HTML. The `ORM` is used to query and manipulate data from the database using `JavaScript` rather than `SQL`.
 
 ## How users can get started with this project ## 
 
@@ -13,7 +13,7 @@ This project usess `MySQL`, `Node`, `Express`, `Handlebars`, and a homemade `ORM
 
 2. **Build a workout**.
     - Add exercises to "Your Next Workout" by selecting the **+** button.
-    - Remove exercises from "Your Next Workout" by selecing the **-** button.
+    - Remove exercises from "Your Next Workout" by selecting the **-** button.
     
 3. **Add a new exercise to the database**.
     - Enter a new exercise into the form at the bottom of the page for use in future workouts by future users!
