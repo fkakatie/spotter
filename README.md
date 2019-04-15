@@ -4,7 +4,7 @@ Build your next workout with Spotter. Choose from our list of exercises and even
 
 ## What this project does ## 
 
-This project usess `MySQL`, `Node`, `Express`, `Handlebars`, and a homemade `ORM`. `Node` and `MySQL` is used to query and route data in the app. `Handlebars` is used to generate the HTML. The `ORM` is used to query and manipulate data from the database using `JavaScript` rather than `SQL`.
+This project uses `MySQL`, `Node`, `Express`, `Handlebars`, and a homemade `ORM`. `Node` and `MySQL` is used to query and route data in the app. `Handlebars` is used to generate the HTML. The `ORM` is used to query and manipulate data from the database using `JavaScript` rather than `SQL`.
 
 ## How users can get started with this project ## 
 
